@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Denggaopan</Authors>
+    <Company>Denggaopan</Company>
+    <Description>雪花算法，有序long型id生成器</Description>
+    <Copyright>Denggaopan</Copyright>
+    <PackageTags>Snowflake IdGenerator 雪花算法 id生成器</PackageTags>
+    <PackageReleaseNotes>用雪花算法，生成有序long型id</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
