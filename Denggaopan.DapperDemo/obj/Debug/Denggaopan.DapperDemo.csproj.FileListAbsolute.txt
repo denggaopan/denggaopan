@@ -1,0 +1,11 @@
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Denggaopan.DapperDemo.exe.config
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Denggaopan.DapperDemo.exe
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Denggaopan.DapperDemo.pdb
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Dapper.dll
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Newtonsoft.Json.dll
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Dapper.xml
+E:\lab\Denggaopan\Denggaopan.DapperDemo\bin\Debug\Newtonsoft.Json.xml
+E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.csprojAssemblyReference.cache
+E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.csproj.CopyComplete
+E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.exe
+E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.pdb
