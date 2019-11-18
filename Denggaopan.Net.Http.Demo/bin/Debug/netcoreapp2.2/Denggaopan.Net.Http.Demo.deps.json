@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Denggaopan.Net.Http.Demo/1.0.0": {
+        "dependencies": {
+          "Denggaopan.Net.Http": "1.0.0"
+        },
+        "runtime": {
+          "Denggaopan.Net.Http.Demo.dll": {}
+        }
+      },
+      "Denggaopan.Net.Http/1.0.0": {
+        "runtime": {
+          "Denggaopan.Net.Http.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Denggaopan.Net.Http.Demo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Denggaopan.Net.Http/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
