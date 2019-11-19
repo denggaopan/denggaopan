@@ -42,3 +42,5 @@ E:\lab\Denggaopan\Denggaopan.LocalizationDemo\obj\Debug\netcoreapp3.0\zh\Denggao
 E:\lab\Denggaopan\Denggaopan.LocalizationDemo\obj\Debug\netcoreapp3.0\Denggaopan.LocalizationDemo.csprojAssemblyReference.cache
 E:\lab\Denggaopan\Denggaopan.LocalizationDemo\obj\Debug\netcoreapp3.0\Denggaopan.LocalizationDemo.Resources.Views.Home.Index.en.resources
 E:\lab\Denggaopan\Denggaopan.LocalizationDemo\obj\Debug\netcoreapp3.0\Denggaopan.LocalizationDemo.Resources.Views.Home.Index.zh.resources
+E:\lab\Denggaopan\Denggaopan.LocalizationDemo\obj\Debug\netcoreapp3.0\Denggaopan.LocalizationDemo.Resources.Views.Home.Privacy.en.resources
+E:\lab\Denggaopan\Denggaopan.LocalizationDemo\obj\Debug\netcoreapp3.0\Denggaopan.LocalizationDemo.Resources.Views.Home.Privacy.zh.resources

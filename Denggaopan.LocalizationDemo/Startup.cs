@@ -31,7 +31,9 @@ namespace Denggaopan.LocalizationDemo
                 options.ResourcesPath = "Resources";
             });
 
-            services.AddMvc().AddMvcLocalization(LanguageViewLocationExpanderFormat.SubFolder);
+            services.AddMvc()
+                .AddMvcLocalization(LanguageViewLocationExpanderFormat.SubFolder)
+                .AddDataAnnotationsLocalization(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
