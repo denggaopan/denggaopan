@@ -63,5 +63,26 @@ namespace Denggaopan.LocalizationDemo.Controllers
                 return "";
             return culture.Name;
         }
+
+        public IActionResult ChangeCulture()
+        {
+            var culture = System.Globalization.CultureInfo.CurrentCulture;
+            var c = "en-US";
+            if (culture != null)
+            {
+                c = culture.Name != "en-US" ? "en-US" : "zh-CN";   
+            }
+            setCulture(c);
+            return Redirect("/");
+        }
+
+        private void setCulture(string culture)
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                );
+        }
     }
 }
