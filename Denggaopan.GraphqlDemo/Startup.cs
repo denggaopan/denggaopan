@@ -20,6 +20,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using GraphQL.DataLoader;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Denggaopan.GraphqlDemo
 {
@@ -60,12 +61,31 @@ namespace Denggaopan.GraphqlDemo
             services.AddScoped<IDependencyResolver>(s =>
                 new FuncDependencyResolver(s.GetRequiredService));
 
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory, ApplicationDbContext db)
         {
-            app.UseMiddleware<GraphQLMiddleware>();            
+            //have migrations,update database
+            if (db.Database.GetPendingMigrations().Any())
+            {
+                db.Database.Migrate();
+            }
+
+            //graphql
+            app.UseMiddleware<GraphQLMiddleware>();
+
+            //rest
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

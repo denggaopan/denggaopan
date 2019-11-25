@@ -32,7 +32,7 @@ namespace Denggaopan.GraphqlDemo.Middlewares
 
         public async Task InvokeAsync(HttpContext context, ISchema schema,IServiceProvider serviceProvider)
         {
-            if (context.Request.Path.StartsWithSegments("/graphql") && string.Equals(context.Request.Method, "POST", StringComparison.OrdinalIgnoreCase))
+            if (context.Request.Path.StartsWithSegments("/graphql") && context.Request.Method.ToUpper() == "POST")
             {
                 var body = string.Empty;
                 using (var streamreader = new StreamReader(context.Request.Body))
