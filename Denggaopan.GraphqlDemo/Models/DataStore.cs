@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Denggaopan.GraphqlDemo.Models
@@ -87,9 +88,14 @@ namespace Denggaopan.GraphqlDemo.Models
             return await _db.OrderItems.FindAsync(id);
         }
 
-        public async Task<IEnumerable<OrderItem>> GetOrderItemByOrderIdAsync(int orderId)
+        public async Task<IEnumerable<OrderItem>> GetOrderItemsByOrderIdAsync(int orderId)
         {
             return await _db.OrderItems.Where(a => a.OrderId == orderId).AsNoTracking().ToListAsync();
+        }
+
+        public async Task<IDictionary<int, Customer>> GetCustomersByIdsAsync(IEnumerable<int> customerIds, CancellationToken token)
+        {
+            return await _db.Customers.Where(i => customerIds.Contains(i.CustomerId)).ToDictionaryAsync(x => x.CustomerId);
         }
     }
 }

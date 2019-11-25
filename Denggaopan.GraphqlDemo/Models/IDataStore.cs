@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Denggaopan.GraphqlDemo.Models
@@ -29,6 +30,8 @@ namespace Denggaopan.GraphqlDemo.Models
 
         Task<OrderItem> GetOrderItemAsync(int id);
 
-        Task<IEnumerable<OrderItem>> GetOrderItemByOrderIdAsync(int orderId);
+        Task<IEnumerable<OrderItem>> GetOrderItemsByOrderIdAsync(int orderId);
+
+        Task<IDictionary<int, Customer>> GetCustomersByIdsAsync(IEnumerable<int> customerIds, CancellationToken token);
     }
 }

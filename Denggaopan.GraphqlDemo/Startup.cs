@@ -17,6 +17,9 @@ using Denggaopan.GraphqlDemo.Middlewares;
 using Denggaopan.GraphqlDemo.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using NLog.Extensions.Logging;
+using GraphQL.DataLoader;
 
 namespace Denggaopan.GraphqlDemo
 {
@@ -37,6 +40,8 @@ namespace Denggaopan.GraphqlDemo
 
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
+            services.AddSingleton<IDataLoaderContextAccessor, DataLoaderContextAccessor>();
+            services.AddSingleton<DataLoaderDocumentListener>();
 
             services.AddScoped<IDataStore, DataStore>();
             services.AddScoped<InventoryQuery>();
@@ -58,11 +63,9 @@ namespace Denggaopan.GraphqlDemo
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseMiddleware<GraphQLMiddleware>();
-
-            
+            app.UseMiddleware<GraphQLMiddleware>();            
         }
     }
 }
