@@ -1,0 +1,36 @@
+{
+    "ReRoutes": [
+      {
+        "UseServiceDiscovery": true,
+        "DownstreamPathTemplate": "/api/{url}",
+        "DownstreamScheme": "http",
+        "ServiceName": "TestService",
+        "LoadBalancerOptions": {
+          "Type": "RoundRobin"
+        },
+        "UpstreamPathTemplate": "/test/{url}",
+        "UpstreamHttpMethod": [ "Get" ],
+        "ReRoutesCaseSensitive": false
+      },
+      {
+        "UseServiceDiscovery": true,
+        "DownstreamPathTemplate": "/api/{url}",
+        "DownstreamScheme": "http",
+        "ServiceName": "OrderService",
+        "LoadBalancerOptions": {
+          "Type": "LeastConnection"
+        },
+        "UpstreamPathTemplate": "/order/{url}",
+        "UpstreamHttpMethod": [ "Get" ],
+        "ReRoutesCaseSensitive": false
+      }
+    ],
+    "GlobalConfiguration": { 
+      "ServiceDiscoveryProvider": { 
+        "Host": "localhost",
+        "Port": 8500,
+        "Type":"PollConsul",
+        "PollingInterval": 1000
+      }
+    }
+  }

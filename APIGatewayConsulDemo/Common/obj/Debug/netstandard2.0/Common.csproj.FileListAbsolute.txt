@@ -1,0 +1,8 @@
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\bin\Debug\netstandard2.0\Common.deps.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\bin\Debug\netstandard2.0\Common.dll
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\bin\Debug\netstandard2.0\Common.pdb
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\obj\Debug\netstandard2.0\Common.dll
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\Common\obj\Debug\netstandard2.0\Common.pdb

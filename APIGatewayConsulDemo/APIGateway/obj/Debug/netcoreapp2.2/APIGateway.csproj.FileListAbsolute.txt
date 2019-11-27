@@ -1,0 +1,17 @@
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\appsettings.Development.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\appsettings.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\ocelot.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\APIGateway.deps.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\APIGateway.runtimeconfig.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\APIGateway.runtimeconfig.dev.json
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\APIGateway.dll
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\bin\Debug\netcoreapp2.2\APIGateway.pdb
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.csprojAssemblyReference.cache
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.RazorAssemblyInfo.cache
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.RazorAssemblyInfo.cs
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.AssemblyInfoInputs.cache
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.AssemblyInfo.cs
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.RazorTargetAssemblyInfo.cache
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.dll
+E:\lab\APIGatewayDemo2\APIGatewayConsulDemo\APIGateway\obj\Debug\netcoreapp2.2\APIGateway.pdb
