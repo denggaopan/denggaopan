@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Denggaopan.ApolloNetCoreDemo": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Apollo:AppId": "apollo-client",
+        "Apollo:MetaServer": "http://106.54.227.205:8080/"
+      }
+    }
+  }
+}

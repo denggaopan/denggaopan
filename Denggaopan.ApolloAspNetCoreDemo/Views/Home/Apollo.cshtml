@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Apollo";
+}
+
+<h1>Apollo demo - @ViewBag.Author</h1>
+
+<form method="get">
+    <p>key:<input type="text" class="input" name="key" value="@ViewBag.Key" /> value:<span class="red">@ViewBag.Value</span></p>
+    <p><input type="submit" class="btn btn-primary" value="OK" /></p>
+</form>
+
