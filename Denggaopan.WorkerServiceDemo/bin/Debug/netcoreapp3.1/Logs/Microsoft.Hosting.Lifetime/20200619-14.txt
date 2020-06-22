@@ -1,0 +1,12 @@
+2020/06/19 14:00:16.831|INFO||Microsoft.Hosting.Lifetime||Application started. Press Ctrl+C to shut down.
+2020/06/19 14:00:16.831|INFO||Microsoft.Hosting.Lifetime|envName=Development|Hosting environment: Development
+2020/06/19 14:00:16.831|INFO||Microsoft.Hosting.Lifetime|contentRoot=E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo|Content root path: E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo
+2020/06/19 14:00:28.598|INFO||Microsoft.Hosting.Lifetime||Application is shutting down...
+2020/06/19 14:27:18.511|INFO||Microsoft.Hosting.Lifetime||Application started. Press Ctrl+C to shut down.
+2020/06/19 14:27:18.511|INFO||Microsoft.Hosting.Lifetime|envName=Development|Hosting environment: Development
+2020/06/19 14:27:18.511|INFO||Microsoft.Hosting.Lifetime|contentRoot=E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo|Content root path: E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo
+2020/06/19 14:27:26.592|INFO||Microsoft.Hosting.Lifetime||Application is shutting down...
+2020/06/19 14:30:31.152|INFO||Microsoft.Hosting.Lifetime||Application started. Press Ctrl+C to shut down.
+2020/06/19 14:30:31.152|INFO||Microsoft.Hosting.Lifetime|envName=Development|Hosting environment: Development
+2020/06/19 14:30:31.152|INFO||Microsoft.Hosting.Lifetime|contentRoot=E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo|Content root path: E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo
+2020/06/19 14:30:44.167|INFO||Microsoft.Hosting.Lifetime||Application is shutting down...

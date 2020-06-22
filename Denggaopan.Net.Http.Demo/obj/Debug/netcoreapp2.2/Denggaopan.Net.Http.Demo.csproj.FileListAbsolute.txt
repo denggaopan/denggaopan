@@ -11,3 +11,5 @@ E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Ne
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.csproj.CopyComplete
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.dll
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.pdb
+E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.csproj.CoreCompileInputs.cache
+E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.genruntimeconfig.cache

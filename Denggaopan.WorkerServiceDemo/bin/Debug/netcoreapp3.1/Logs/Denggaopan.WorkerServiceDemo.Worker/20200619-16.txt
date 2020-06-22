@@ -1,0 +1,9 @@
+2020/06/19 16:00:11.663|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:11 +08:00|Worker starting at: 06/19/2020 16:00:11 +08:00
+2020/06/19 16:00:11.702|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:11 +08:00|Worker running at: 06/19/2020 16:00:11 +08:00
+2020/06/19 16:00:12.714|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:12 +08:00|Worker running at: 06/19/2020 16:00:12 +08:00
+2020/06/19 16:00:13.732|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:13 +08:00|Worker running at: 06/19/2020 16:00:13 +08:00
+2020/06/19 16:00:14.735|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:14 +08:00|Worker running at: 06/19/2020 16:00:14 +08:00
+2020/06/19 16:00:15.746|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:15 +08:00|Worker running at: 06/19/2020 16:00:15 +08:00
+2020/06/19 16:00:16.751|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:16 +08:00|Worker running at: 06/19/2020 16:00:16 +08:00
+2020/06/19 16:00:17.331|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:17 +08:00|Worker stoping at: 06/19/2020 16:00:17 +08:00
+2020/06/19 16:00:17.339|INFO||Denggaopan.WorkerServiceDemo.Worker|time=2020/6/19 16:00:17 +08:00|Worker running exception at: 06/19/2020 16:00:17 +08:00

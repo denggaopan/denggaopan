@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Denggaopan.WorkerServiceDemo": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
