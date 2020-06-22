@@ -9,3 +9,4 @@ E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.csprojAs
 E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.csproj.CopyComplete
 E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.exe
 E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.pdb
+E:\lab\Denggaopan\Denggaopan.DapperDemo\obj\Debug\Denggaopan.DapperDemo.csproj.CoreCompileInputs.cache
