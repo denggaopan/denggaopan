@@ -23,7 +23,7 @@ namespace Denggaopan.ApolloAspNetCoreDemo
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration(builder => builder //普通方式，一般配置在appsettings.json中
+                .ConfigureAppConfiguration(builder => builder
                    .AddApollo(builder.Build().GetSection("apollo"))
                     .AddDefault(ConfigFileFormat.Xml)
                     .AddDefault(ConfigFileFormat.Json)

@@ -1,9 +1,0 @@
-2020/06/20 15:04:17.903|INFO||Microsoft.Hosting.Lifetime||Application started. Press Ctrl+C to shut down.
-2020/06/20 15:04:17.912|INFO||Microsoft.Hosting.Lifetime|envName=Development|Hosting environment: Development
-2020/06/20 15:04:17.912|INFO||Microsoft.Hosting.Lifetime|contentRoot=E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo|Content root path: E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo
-2020/06/20 15:09:30.572|INFO||Microsoft.Hosting.Lifetime||Application started. Press Ctrl+C to shut down.
-2020/06/20 15:09:30.572|INFO||Microsoft.Hosting.Lifetime|envName=Development|Hosting environment: Development
-2020/06/20 15:09:30.572|INFO||Microsoft.Hosting.Lifetime|contentRoot=E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo|Content root path: E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo
-2020/06/20 15:14:56.197|INFO||Microsoft.Hosting.Lifetime||Application started. Press Ctrl+C to shut down.
-2020/06/20 15:14:56.197|INFO||Microsoft.Hosting.Lifetime|envName=Development|Hosting environment: Development
-2020/06/20 15:14:56.197|INFO||Microsoft.Hosting.Lifetime|contentRoot=E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo|Content root path: E:\lab\Denggaopan\Denggaopan.WorkerServiceDemo
