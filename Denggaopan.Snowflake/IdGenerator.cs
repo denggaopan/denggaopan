@@ -5,13 +5,13 @@ namespace Denggaopan.Snowflake
     public class IdGenerator
     {
         //基准时间
-        public const long Twepoch = 1288834974657L;
+        public const long Epoch = 1400515200000L;
         //机器ID位数
-        const int WorkerIdBits = 5;
+        const int WorkerIdBits = 10;
         //数据中心ID位数
-        const int DataCenterIdBits = 5;
+        const int DataCenterIdBits = 2;
         //序列号位数
-        const int SequenceBits = 12;
+        const int SequenceBits = 10;
         //机器ID最大值
         const long MaxWorkerId = -1L ^ (-1L << WorkerIdBits);
         //数据中心ID最大值
@@ -86,7 +86,7 @@ namespace Denggaopan.Snowflake
                 }
 
                 _lastTimestamp = timestamp;
-                return ((timestamp - Twepoch) << TimestampLeftShift) | (DataCenterId << DataCenterIdShift) | (WorkerId << WorkerIdShift) | _sequence;
+                return ((timestamp - Epoch) << TimestampLeftShift) | (DataCenterId << DataCenterIdShift) | (WorkerId << WorkerIdShift) | _sequence;
             }
         }
 
