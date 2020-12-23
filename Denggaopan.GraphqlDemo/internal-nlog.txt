@@ -1,0 +1,175 @@
+2019-11-25 15:29:04.8394 Info Message Template Auto Format enabled
+2019-11-25 15:29:04.8868 Info Adding target AsyncTargetWrapper(Name=file)
+2019-11-25 15:29:04.8964 Info Adding target FileTarget(Name=allfile)
+2019-11-25 15:29:04.9095 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 15:29:04.9290 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2019-11-25 15:29:04.9481 Info Found 75 configuration items
+2019-11-25 15:29:04.9742 Info Configuration initialized.
+2019-11-25 15:29:04.9742 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 15:31:25.1482 Info Message Template Auto Format enabled
+2019-11-25 15:31:25.1999 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 15:31:25.2177 Info Adding target FileTarget(Name=allfile)
+2019-11-25 15:31:25.2177 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 15:31:25.2268 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'file' not found for logging rule: *.
+2019-11-25 15:31:25.2368 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2019-11-25 15:31:25.2368 Info Found 55 configuration items
+2019-11-25 15:31:25.2587 Info Configuration initialized.
+2019-11-25 15:31:25.2587 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 15:33:20.4716 Info Message Template Auto Format enabled
+2019-11-25 15:33:20.5362 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 15:33:20.5362 Info Adding target FileTarget(Name=allfile)
+2019-11-25 15:33:20.5497 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 15:33:20.5763 Info Found 55 configuration items
+2019-11-25 15:33:20.5878 Info Configuration initialized.
+2019-11-25 15:33:20.5878 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 15:47:30.6751 Info Message Template Auto Format enabled
+2019-11-25 15:47:30.7268 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 15:47:30.7484 Info Adding target FileTarget(Name=allfile)
+2019-11-25 15:47:30.7484 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 15:47:30.7779 Info Found 55 configuration items
+2019-11-25 15:47:30.7874 Info Configuration initialized.
+2019-11-25 15:47:30.7874 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 15:58:41.4973 Info Message Template Auto Format enabled
+2019-11-25 15:58:41.5453 Info Adding target FileTarget(Name=allfile)
+2019-11-25 15:58:41.5453 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 15:58:41.5885 Info Found 55 configuration items
+2019-11-25 15:58:41.5999 Info Configuration initialized.
+2019-11-25 15:58:41.5999 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:00:46.3332 Info Message Template Auto Format enabled
+2019-11-25 16:00:46.3943 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:00:46.4121 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:00:46.4121 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:00:46.4397 Info Found 55 configuration items
+2019-11-25 16:00:46.4512 Info Configuration initialized.
+2019-11-25 16:00:46.4512 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:04:04.9563 Info Message Template Auto Format enabled
+2019-11-25 16:04:04.9924 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:04:05.0080 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:04:05.0080 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:04:05.0323 Info Found 55 configuration items
+2019-11-25 16:04:05.0413 Info Configuration initialized.
+2019-11-25 16:04:05.0413 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:50:35.1890 Info Message Template Auto Format enabled
+2019-11-25 16:50:35.2446 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:50:35.2615 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:50:35.2615 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:50:35.2884 Info Found 55 configuration items
+2019-11-25 16:50:35.2884 Info Configuration initialized.
+2019-11-25 16:50:35.2884 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:51:14.3537 Info Message Template Auto Format enabled
+2019-11-25 16:51:14.3895 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:51:14.3933 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:51:14.3933 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:51:14.4302 Info Found 55 configuration items
+2019-11-25 16:51:14.4302 Info Configuration initialized.
+2019-11-25 16:51:14.4302 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:51:50.0192 Info Message Template Auto Format enabled
+2019-11-25 16:51:50.0541 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:51:50.0689 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:51:50.0689 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:51:50.0922 Info Found 55 configuration items
+2019-11-25 16:51:50.1025 Info Configuration initialized.
+2019-11-25 16:51:50.1025 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:53:11.2005 Info Message Template Auto Format enabled
+2019-11-25 16:53:11.2400 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:53:11.2555 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:53:11.2555 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:53:11.2805 Info Found 55 configuration items
+2019-11-25 16:53:11.2898 Info Configuration initialized.
+2019-11-25 16:53:11.2898 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:54:42.3888 Info Message Template Auto Format enabled
+2019-11-25 16:54:42.4356 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:54:42.4399 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:54:42.4399 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:54:42.5020 Info Found 55 configuration items
+2019-11-25 16:54:42.5146 Info Configuration initialized.
+2019-11-25 16:54:42.5146 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:58:15.0046 Info Message Template Auto Format enabled
+2019-11-25 16:58:15.0606 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:58:15.0786 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:58:15.0805 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:58:15.1083 Info Found 55 configuration items
+2019-11-25 16:58:15.1203 Info Configuration initialized.
+2019-11-25 16:58:15.1203 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 16:59:13.2110 Info Message Template Auto Format enabled
+2019-11-25 16:59:13.2592 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 16:59:13.2756 Info Adding target FileTarget(Name=allfile)
+2019-11-25 16:59:13.2756 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 16:59:13.3030 Info Found 55 configuration items
+2019-11-25 16:59:13.3030 Info Configuration initialized.
+2019-11-25 16:59:13.3030 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:02:53.7140 Info Message Template Auto Format enabled
+2019-11-25 17:02:53.7528 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:02:53.7528 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:02:53.7528 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:02:53.8100 Info Found 55 configuration items
+2019-11-25 17:02:53.8351 Info Configuration initialized.
+2019-11-25 17:02:53.8351 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:03:28.0795 Info Message Template Auto Format enabled
+2019-11-25 17:03:28.1349 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:03:28.1521 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:03:28.1521 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:03:28.1790 Info Found 55 configuration items
+2019-11-25 17:03:28.1906 Info Configuration initialized.
+2019-11-25 17:03:28.1906 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:04:41.0288 Info Message Template Auto Format enabled
+2019-11-25 17:04:41.0895 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:04:41.1081 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:04:41.1081 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:04:41.1374 Info Found 55 configuration items
+2019-11-25 17:04:41.1512 Info Configuration initialized.
+2019-11-25 17:04:41.1512 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:08:29.3692 Info Message Template Auto Format enabled
+2019-11-25 17:08:29.4104 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:08:29.4267 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:08:29.4267 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:08:29.4550 Info Found 55 configuration items
+2019-11-25 17:08:29.4652 Info Configuration initialized.
+2019-11-25 17:08:29.4652 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:12:19.6437 Info Message Template Auto Format enabled
+2019-11-25 17:12:19.6822 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:12:19.6979 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:12:19.6979 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:12:19.7327 Info Found 55 configuration items
+2019-11-25 17:12:19.7475 Info Configuration initialized.
+2019-11-25 17:12:19.7475 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:12:55.4081 Info Message Template Auto Format enabled
+2019-11-25 17:12:55.4441 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:12:55.4601 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:12:55.4601 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:12:55.4854 Info Found 55 configuration items
+2019-11-25 17:12:55.4987 Info Configuration initialized.
+2019-11-25 17:12:55.4987 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:13:15.1487 Info Message Template Auto Format enabled
+2019-11-25 17:13:15.1995 Info Adding target AsyncTargetWrapper(Name=allfile)
+2019-11-25 17:13:15.2174 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:13:15.2174 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:13:15.2448 Info Found 55 configuration items
+2019-11-25 17:13:15.2563 Info Configuration initialized.
+2019-11-25 17:13:15.2563 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:25:23.7811 Info Message Template Auto Format enabled
+2019-11-25 17:25:23.8467 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:25:23.8467 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:25:23.8765 Info Found 55 configuration items
+2019-11-25 17:25:23.8874 Info Configuration initialized.
+2019-11-25 17:25:23.8874 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-25 17:32:40.7131 Info Message Template Auto Format enabled
+2019-11-25 17:32:40.7960 Info Adding target FileTarget(Name=allfile)
+2019-11-25 17:32:40.7960 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-25 17:32:40.8294 Info Found 55 configuration items
+2019-11-25 17:32:40.8424 Info Configuration initialized.
+2019-11-25 17:32:40.8424 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-26 09:14:14.7329 Info Message Template Auto Format enabled
+2019-11-26 09:14:14.8022 Info Adding target FileTarget(Name=allfile)
+2019-11-26 09:14:14.8022 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-26 09:14:14.8321 Info Found 55 configuration items
+2019-11-26 09:14:14.8321 Info Configuration initialized.
+2019-11-26 09:14:14.8321 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-26 09:54:01.1729 Info Message Template Auto Format enabled
+2019-11-26 09:54:01.2418 Info Adding target FileTarget(Name=allfile)
+2019-11-26 09:54:01.2418 Info Adding target FileTarget(Name=ownFile-web)
+2019-11-26 09:54:01.2713 Info Found 55 configuration items
+2019-11-26 09:54:01.2819 Info Configuration initialized.
+2019-11-26 09:54:01.2819 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.7.10445. Product version: 4.6.7.
+2019-11-26 15:10:38.2465 Info AppDomain Shutting down. Logger closing...
+2019-11-26 15:10:38.9578 Info Logger has been shut down.
