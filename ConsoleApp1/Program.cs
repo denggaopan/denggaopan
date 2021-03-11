@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Linq;
 
 namespace ConsoleApp1
@@ -7,6 +8,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            var a = Convert.ToString(100, 2);
+            Console.WriteLine(a);
+            return;
+
+            var url = $"https://dev.king.kingcome.net.cn/notify/reserve/PaidMoneyRefund";
+            var data = new
+            {
+                orderId = 5164,
+                reason="xxxxx",
+                employeeId = 5541,
+                employeeName = "PAUL"
+            };
+            var res = HttpHelpler.Post(url, JsonConvert.SerializeObject(data));
+            Console.WriteLine(res);
+            return;
+
             Console.WriteLine("Hello World!");
 
             var ts1 = 1400515200000L;

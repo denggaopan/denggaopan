@@ -19,9 +19,11 @@ namespace Denggaopan.FreeSqlDemo
 
             var last = DbHelper.Fsql.Select<ReserveOrder>().OrderByDescending(a => a.CreateTime).First();
             var repo = DbHelper.Fsql.GetRepository<ReserveOrder>();
-            DbHelper.Fsql.Update<ReserveOrder>().Set(a => a.TsOrderId, 666)
+            var lineNum = DbHelper.Fsql.Update<ReserveOrder>().Set(a => a.TsOrderId, 666)
                 .Where(a => a.ReserveOrderID == last.ReserveOrderID)
                 .ExecuteAffrows();
+            Console.WriteLine("==================");
+            Console.WriteLine(lineNum);
             Console.ReadLine();
         }
     }

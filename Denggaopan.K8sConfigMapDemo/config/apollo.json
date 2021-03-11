@@ -1,0 +1,15 @@
+{
+  "Apollo": {
+    "AppId": "denggaopan-k8sconfigmapdemo",    
+    "MetaServer": null,
+    "Secret": "9f1c15be109c4eb0990e1f1dd7036f31",
+    "Env": "DEV",
+    "Meta": {
+      "DEV": "http://122.112.251.166:8080/",
+      "FAT": "http://119.3.104.149:8080/",
+      "UAT": "http://localhost:8080/",
+      "PRO": "http://localhost:8080/"
+    },
+    "RefreshInterval": 300000
+  }
+}

@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormRequest", "FormRequest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denggaopan.FreeSqlDemo", "Denggaopan.FreeSqlDemo\Denggaopan.FreeSqlDemo.csproj", "{C090A1DD-6221-42F2-AB6B-EFC05F1B2FAD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Denggaopan.K8sConfigMapDemo", "Denggaopan.K8sConfigMapDemo\Denggaopan.K8sConfigMapDemo.csproj", "{8A41E896-BFB1-41DF-B381-76EBA3B26F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubernetes1", "Kubernetes1\Kubernetes1.csproj", "{97202903-1443-471E-B9C2-97386BEF4BD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +175,14 @@ Global
 		{C090A1DD-6221-42F2-AB6B-EFC05F1B2FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C090A1DD-6221-42F2-AB6B-EFC05F1B2FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C090A1DD-6221-42F2-AB6B-EFC05F1B2FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A41E896-BFB1-41DF-B381-76EBA3B26F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A41E896-BFB1-41DF-B381-76EBA3B26F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A41E896-BFB1-41DF-B381-76EBA3B26F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A41E896-BFB1-41DF-B381-76EBA3B26F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97202903-1443-471E-B9C2-97386BEF4BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97202903-1443-471E-B9C2-97386BEF4BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97202903-1443-471E-B9C2-97386BEF4BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97202903-1443-471E-B9C2-97386BEF4BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,6 +212,8 @@ Global
 		{8FC80DC1-62AD-4011-95B5-6AE2AFEC2CDE} = {AA20B851-89AF-4E05-902F-E02A7145C9F0}
 		{9DD78ABD-A4C5-4E19-AF0A-C7BDD751DDD9} = {AA20B851-89AF-4E05-902F-E02A7145C9F0}
 		{C090A1DD-6221-42F2-AB6B-EFC05F1B2FAD} = {AA20B851-89AF-4E05-902F-E02A7145C9F0}
+		{8A41E896-BFB1-41DF-B381-76EBA3B26F4B} = {AA20B851-89AF-4E05-902F-E02A7145C9F0}
+		{97202903-1443-471E-B9C2-97386BEF4BD3} = {AA20B851-89AF-4E05-902F-E02A7145C9F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EE9AA19-2931-42AD-B584-07C33F1FFB9F}
