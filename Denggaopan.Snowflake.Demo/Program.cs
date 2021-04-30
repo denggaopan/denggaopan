@@ -9,13 +9,13 @@ namespace Denggaopan.Snowflake.Demo
     class Program
     {
         private static int N = 2000000;
-        private static int TN = 30;
+        private static int TN = 1<<5 -1;
         private static HashSet<long> set = new HashSet<long>();
         private static IdGenerator gen = new IdGenerator(1, 1);
         private static int taskCount = 0;
 
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             for (int i = 0; i <= TN; i++)
             {

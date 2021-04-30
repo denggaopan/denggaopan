@@ -12,31 +12,22 @@ namespace Denggaopan.Snowflake.Demo
         private static int N = 2000000;
         private static int TN = 30;
         private static HashSet<long> set = new HashSet<long>();
-        private static IdGenerator gen = new IdGenerator(1, 1);
+        private static HashSet<long> set2 = new HashSet<long>();
         private static int taskCount = 0;
 
 
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             for (int i = 0; i <= TN; i++)
             {
                 Task.Run(() => GetID());
-
-
             }
             Task.Run(() => Printf());
 
-            var id = gen.NextId();
-            Console.WriteLine(id);
-
-            var ts = 1400515200000L;// 1604367042000L;
-            var tsbit = Convert.ToString(ts, 2);
-            Console.WriteLine($"{ts} => {tsbit}");
-
-            for (var i = 0; i < 100; i++)
-            {
-                Console.WriteLine(DateTime.Now.ToString("ffffff"));
-            }
+            //for (var i = 0; i < 100; i++)
+            //{
+            //    Console.WriteLine(DateTime.Now.ToString("ffffff"));
+            //}
 
             Console.ReadKey();
         }
@@ -57,13 +48,14 @@ namespace Denggaopan.Snowflake.Demo
             var client = new HttpClient();
             for (var i = 0; i < N; i++)
             {
-                var id = long.Parse(client.GetStringAsync("http://localhost:8101/sample/Snowflake").Result);
+                var apiUrl = "http://localhost:53692/api/Sample"; //http://localhost:8101/sample/Snowflake
+                var id = long.Parse(client.GetStringAsync(apiUrl).Result);
 
                 lock (o)
                 {
                     if (set.Contains(id))
                     {
-                        Console.WriteLine("发现重复项 : {0}", id);
+                        set2.Add(id);
                     }
                     else
                     {
