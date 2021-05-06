@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace Denggaopan.UidGenerator
 {
-    public class IdGenerator
+    public class UidGen
     {
         //基准时间 （10毫秒）
         public const long BaseTimestamp = 160943040000L; //2021-01-01 00:00:00
@@ -39,7 +39,7 @@ namespace Denggaopan.UidGenerator
             internal set { _sequence = value; }
         }
 
-        public IdGenerator(string ip, long workerId, long sequence = 0L)
+        public UidGen(string ip, long workerId, long sequence = 0L)
         {
             // 如果超出范围就抛出异常
             if (workerId > MaxWorkerId || workerId < 0)
@@ -57,7 +57,7 @@ namespace Denggaopan.UidGenerator
         {
             lock (_lock)
             {
-                var timestamp = TimeGen();
+                var timestamp = TimestampGen();
                 if (timestamp < _lastTimestamp)
                 {
                     var overtime = _lastTimestamp - timestamp;
@@ -65,19 +65,23 @@ namespace Denggaopan.UidGenerator
                 }
                 else if (_lastTimestamp == timestamp)
                 {
-                    //如果上次生成时间和当前时间相同,在同一毫秒内
+                    //如果上次生成时间和当前时间相同,在同一时刻内
                     //sequence自增，和sequenceMask相与一下，去掉高位
-                    _sequence = (_sequence + 1) & SequenceMask;
                     //判断是否溢出,也就是每毫秒内超过序号最大值，当为序号最大值时，与sequenceMask相与，sequence就等于0
+                    _sequence++;
+                    if(_sequence > SequenceMask)
+                    {
+                        _sequence = 0;
+                    }
                     if (_sequence == 0)
                     {
                         //等待到下一毫秒
-                        timestamp = TilNextMillis(_lastTimestamp);
+                        timestamp = NextTimestamp(_lastTimestamp);
                     }
                 }
                 else
                 {
-                    //如果和上次生成时间不同,重置sequence，就是下一毫秒开始，sequence计数重新从0开始累加,
+                    //如果和上次生成时间不同,重置sequence，就是下一时刻开始，sequence计数重新从0开始累加,
                     //为了保证尾数随机性更大一些,最后一位可以设置一个随机数
                     _sequence = 0;//new Random().Next(10);
                 }
@@ -88,18 +92,18 @@ namespace Denggaopan.UidGenerator
         }
 
         // 防止产生的时间比之前的时间还要小（由于NTP回拨等问题）,保持增量的趋势.
-        protected virtual long TilNextMillis(long lastTimestamp)
+        protected virtual long NextTimestamp(long lastTimestamp)
         {
-            var timestamp = TimeGen();
+            var timestamp = TimestampGen();
             while (timestamp <= lastTimestamp)
             {
-                timestamp = TimeGen();
+                timestamp = TimestampGen();
             }
             return timestamp;
         }
 
         // 获取当前的时间戳(10ms)
-        protected virtual long TimeGen()
+        protected virtual long TimestampGen()
         {
             return TimeExtensions.CurrentTimeTenMs();
         }

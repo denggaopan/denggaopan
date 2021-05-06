@@ -34,10 +34,7 @@ namespace Denggaopan.UidGeneratorDemo
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Denggaopan.UidGeneratorDemo", Version = "v1" });
             });
 
-            var ip = Dns.GetHostAddresses(Dns.GetHostName()).FirstOrDefault(address => address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)?.ToString();
-            var list = ip.Split('.').Select(a => Convert.ToInt32(a)).ToList();
-            var num = (list[2] << 1 * 8) | list[3];
-            services.AddSingleton(sp => new IdGenerator(ip,num));
+            services.AddUidGenerator(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

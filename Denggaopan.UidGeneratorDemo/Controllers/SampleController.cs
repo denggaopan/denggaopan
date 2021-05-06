@@ -12,16 +12,16 @@ namespace Denggaopan.UidGeneratorDemo.Controllers
     [ApiController]
     public class SampleController : ControllerBase
     {
-        private readonly IdGenerator _idgen;
-        public SampleController(IdGenerator idgen)
+        private readonly UidGen _uidgen;
+        public SampleController(UidGen uidgen)
         {
-            _idgen = idgen;
+            _uidgen = uidgen;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var uid = _idgen.NextId();
+            var uid = _uidgen.NextId();
             return Ok(uid);
         }
     }

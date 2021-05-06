@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,8 +10,8 @@ namespace Denggaopan.Snowflake.Demo
 {
     class Program2
     {
-        private static int N = 2000000;
-        private static int TN = 30;
+        private static int N = 1000000;
+        private static int TN = 10;
         private static HashSet<long> set = new HashSet<long>();
         private static HashSet<long> set2 = new HashSet<long>();
         private static int taskCount = 0;
@@ -18,28 +19,33 @@ namespace Denggaopan.Snowflake.Demo
 
         static void Main(string[] args)
         {
-            for (int i = 0; i <= TN; i++)
+            Task.Run(() => Printf());
+            for (int i = 0; i < TN; i++)
             {
                 Task.Run(() => GetID());
             }
-            Task.Run(() => Printf());
-
-            //for (var i = 0; i < 100; i++)
-            //{
-            //    Console.WriteLine(DateTime.Now.ToString("ffffff"));
-            //}
-
             Console.ReadKey();
         }
 
         private static void Printf()
         {
+            var sw = new Stopwatch();
+            sw.Start();
             while (taskCount != TN)
             {
                 Console.WriteLine("...");
                 Thread.Sleep(1000);
             }
-            Console.WriteLine(set.Count == N * taskCount);
+
+            var success = set.Count == N * taskCount;
+            Console.WriteLine(success ? "生成成功" : "生成失败");
+            if (!success)
+            {
+                Console.WriteLine(set2);
+            }
+            sw.Stop();
+            Console.WriteLine((decimal)sw.ElapsedMilliseconds / 1000 + "s");
+
         }
 
         private static object o = new object();
@@ -62,7 +68,7 @@ namespace Denggaopan.Snowflake.Demo
                         set.Add(id);
                     }
                 }
-
+                //Console.WriteLine(id);
             }
             Console.WriteLine($"任务{++taskCount}完成");
         }
