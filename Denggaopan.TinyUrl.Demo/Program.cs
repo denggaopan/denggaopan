@@ -18,7 +18,7 @@ namespace Denggaopan.TinyUrl.Demo
 
 
             var num = 100000;
-            var max = 110000;
+            var max = 100100;
             for (var i = num; i < max; i++)
             {
                 num += TinyUrlHelper.GetRnd();

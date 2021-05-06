@@ -10,8 +10,8 @@ namespace Denggaopan.Snowflake.Demo
 {
     class Program2
     {
-        private static int N = 1000000;
-        private static int TN = 10;
+        private static int N = 100;
+        private static int TN = 1;
         private static HashSet<long> set = new HashSet<long>();
         private static HashSet<long> set2 = new HashSet<long>();
         private static int taskCount = 0;
@@ -24,6 +24,7 @@ namespace Denggaopan.Snowflake.Demo
             {
                 Task.Run(() => GetID());
             }
+
             Console.ReadKey();
         }
 
@@ -68,7 +69,7 @@ namespace Denggaopan.Snowflake.Demo
                         set.Add(id);
                     }
                 }
-                //Console.WriteLine(id);
+                //Console.WriteLine($"{id} => {TinyUrl.TinyUrlHelper.Parse(id)}");
             }
             Console.WriteLine($"任务{++taskCount}完成");
         }
