@@ -7,11 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="Denggaopan.Snowflake" Version="1.0.0" />
+    <PackageReference Include="Denggaopan.TinyUrl" Version="1.0.0" />
     <PackageReference Include="Snowflake.Core" Version="2.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Denggaopan.TinyUrl\Denggaopan.TinyUrl.csproj" />
   </ItemGroup>
 
 </Project>

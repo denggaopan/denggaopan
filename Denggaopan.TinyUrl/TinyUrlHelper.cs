@@ -8,35 +8,41 @@ namespace Denggaopan.TinyUrl
     /// </summary>
     public class TinyUrlHelper
     {
-        private const string Seq = "7vqL64ETrtkiB1NV3wbCDAGQOxcplURus0XSP95yWZHaeY8oJj2fKFmnhdMIgz";
+        private const string SEQ1 = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        private const string SEQ2 = "7vqL64ETrtkiB1NV3wbCDAGQOxcplURus0XSP95yWZHaeY8oJj2fKFmnhdMIgz";
 
         /// <summary>
         /// 10进制转换为62进制（混淆版）
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="isSorting"></param>
         /// <returns></returns>
-        public static string Parse(long id)
+        public static string Parse(long id, bool isSorting = false)
         {
-            return Mixup(Convert(id));
+            return Mixup(Convert(id,isSorting));
         }
 
         /// <summary>
         /// 将62进制转为10进制（混淆版）
         /// </summary>
         /// <param name="key"></param>
+        /// <param name="isSorting"></param>
         /// <returns></returns>
-        public static long Parse(string key)
+        public static long Parse(string key, bool isSorting = false)
         {
-            return Convert(UnMixup(key));
+            return Convert(UnMixup(key), isSorting);
         }
 
         /// <summary>
         /// 10进制转换为62进制
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="isSorting"></param>
         /// <returns></returns>
-        public static string Convert(long id)
+        public static string Convert(long id, bool isSorting = false)
         {
+            var Seq = isSorting ? SEQ1 : SEQ2;
+
             if (id < 62)
             {
                 return Seq[(int)id].ToString();
@@ -44,16 +50,18 @@ namespace Denggaopan.TinyUrl
             int y = (int)(id % 62);
             long x = (long)(id / 62);
 
-            return Convert(x) + Seq[y];
+            return Convert(x,isSorting) + Seq[y];
         }
 
         /// <summary>
         /// 将62进制转为10进制
         /// </summary>
         /// <param name="key"></param>
+        /// <param name="isSorting"></param>
         /// <returns></returns>
-        public static long Convert(string key)
+        public static long Convert(string key, bool isSorting = false)
         {
+            var Seq = isSorting ? SEQ1 : SEQ2;
             long v = 0;
             int Len = key.Length;
             for (int i = Len - 1; i >= 0; i--)
@@ -173,5 +181,7 @@ namespace Denggaopan.TinyUrl
             var step = rnd.Next(1, max + 1);
             return step;
         }
+
+
     }
 }

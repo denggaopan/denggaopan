@@ -9,6 +9,7 @@ namespace Denggaopan.TinyUrl.Demo
         {
             Console.WriteLine("Hello World!");
 
+
             var keys = TinyUrlHelper.GenerateKeys();
             Console.WriteLine(keys);
 

@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>TinyUrl</Description>
+    <Copyright>Denggaopan</Copyright>
+    <PackageTags>TinyUrl</PackageTags>
+    <PackageReleaseNotes>TinyUrl</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

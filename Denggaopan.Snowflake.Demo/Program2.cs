@@ -69,7 +69,9 @@ namespace Denggaopan.Snowflake.Demo
                         set.Add(id);
                     }
                 }
-                //Console.WriteLine($"{id} => {TinyUrl.TinyUrlHelper.Parse(id)}");
+                var sid = TinyUrl.TinyUrlHelper.Convert(id, true);
+                var lid = TinyUrl.TinyUrlHelper.Convert(sid, true);
+                Console.WriteLine($"{id} => {sid} => {lid}");
             }
             Console.WriteLine($"任务{++taskCount}完成");
         }
