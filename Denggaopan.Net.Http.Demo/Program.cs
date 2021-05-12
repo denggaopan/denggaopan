@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Denggaopan.Helpers;
+using System;
 using System.Net.Http;
 
 namespace Denggaopan.Net.Http.Demo

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Denggaopan.Helpers/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Denggaopan.Helpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Denggaopan.Helpers.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -207,20 +216,22 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "Denggaopan.Net.Http/1.0.1": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Denggaopan.Net.Http.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Denggaopan.Net.Http.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "Denggaopan.Helpers/1.0.2": {
+      "sha512": "NooUc0k/fpQX65XrYmS9zfb2DMyvEAiBsBVrFtkaTiORFXjCHuXchcgCe9rPhTXdp7mur3a3KO8XobOJh3GBlA==",
+      "type": "package",
+      "path": "denggaopan.helpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "denggaopan.helpers.1.0.2.nupkg.sha512",
+        "denggaopan.helpers.nuspec",
+        "lib/netstandard2.0/Denggaopan.Helpers.dll"
+      ]
+    },
     "Microsoft.NETCore.App/2.2.0": {
       "sha512": "7z5l8Jp324S8bU8+yyWeYHXUFYvKyiI5lqS1dXgTzOx1H69Qbf6df12kCKlNX45LpMfCMd4U3M6p7Rl5Zk7SLA==",
       "type": "package",
@@ -688,16 +699,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "Denggaopan.Net.Http/1.0.1": {
-      "type": "project",
-      "path": "../Denggaopan.Net.Http/Denggaopan.Net.Http.csproj",
-      "msbuildProject": "../Denggaopan.Net.Http/Denggaopan.Net.Http.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Denggaopan.Net.Http >= 1.0.1",
+      "Denggaopan.Helpers >= 1.0.2",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -728,11 +734,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {
-            "E:\\lab\\Denggaopan\\Denggaopan.Net.Http\\Denggaopan.Net.Http.csproj": {
-              "projectPath": "E:\\lab\\Denggaopan\\Denggaopan.Net.Http\\Denggaopan.Net.Http.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -744,6 +746,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Denggaopan.Helpers": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Denggaopan.Net.Http\Denggaopan.Net.Http.csproj" />
+    <PackageReference Include="Denggaopan.Helpers" Version="1.0.2" />
   </ItemGroup>
 
 </Project>

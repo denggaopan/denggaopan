@@ -9,8 +9,4 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Denggaopan.Net.Http\Denggaopan.Net.Http.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -42,14 +42,20 @@ namespace Denggaopan.OpenApi
             return BitConverter.ToString(MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(str))).Replace("-", "");
         }
 
-        public static long GetTimestamp()
-        {
-            return Convert.ToInt64((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds);
-        }
-
         public static string GetNonceStr()
         {
             return Guid.NewGuid().ToString().Replace("-", "");
+        }
+
+        public static long GetTimestamp()
+        {
+            return Convert.ToInt64((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds);
+        }
+
+        public bool CheckTimestamp(long timestamp, int inSeconds)
+        {
+            var requestTime = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddMilliseconds(timestamp).AddHours(8);
+            return DateTime.Now.Subtract(requestTime).TotalMilliseconds < inSeconds;
         }
     }
 }

@@ -3,13 +3,10 @@ E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\bin\Debug\netcoreapp2.2\Denggaopan.Ne
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\bin\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.runtimeconfig.dev.json
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\bin\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.dll
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\bin\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.pdb
-E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\bin\Debug\netcoreapp2.2\Denggaopan.Net.Http.dll
-E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\bin\Debug\netcoreapp2.2\Denggaopan.Net.Http.pdb
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.csprojAssemblyReference.cache
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.AssemblyInfoInputs.cache
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.AssemblyInfo.cs
-E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.csproj.CopyComplete
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.dll
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.pdb
-E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.csproj.CoreCompileInputs.cache
 E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.genruntimeconfig.cache
+E:\lab\Denggaopan\Denggaopan.Net.Http.Demo\obj\Debug\netcoreapp2.2\Denggaopan.Net.Http.Demo.csproj.CoreCompileInputs.cache

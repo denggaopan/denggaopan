@@ -4,20 +4,10 @@ using System.Text;
 
 namespace Denggaopan.OpenApi
 {
-    public enum ApiResultCode
-    {
-        Success = 0,
-        Fail
-    }
 
     public class ApiResult
     {
         public ApiResult() { }
-        public ApiResult(string msg)
-        {
-            Code = ApiResultCode.Fail;
-            Message = msg;
-        }
 
         public ApiResult(ApiResultCode code, string msg)
         {
@@ -25,18 +15,23 @@ namespace Denggaopan.OpenApi
             Message = msg;
         }
 
-        public ApiResult(ApiResultCode code, object data)
+        public ApiResultCode Code { get; set; } = ApiResultCode.Success;
+        public string Message { get; set; } = string.Empty;
+    }
+
+    public class ApiResult<T> : ApiResult
+    {
+        public ApiResult() : base() { }
+
+        public ApiResult(ApiResultCode code, string message) : base(code, message)
         {
-            Code = code;
-            Data = data;
         }
-        public ApiResult(object data)
+
+        public ApiResult(T data)
         {
             Data = data;
         }
 
-        public ApiResultCode Code { get; set; } = ApiResultCode.Success;
-        public string Message { get; set; } = string.Empty;
-        public object Data { get; set; }
+        public T Data { get; set; }
     }
 }
