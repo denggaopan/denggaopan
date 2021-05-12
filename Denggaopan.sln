@@ -85,6 +85,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Denggaopan.Npoi", "Denggaop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Denggaopan.QrCode", "Denggaopan.QrCode\Denggaopan.QrCode.csproj", "{69EF6EE5-3213-43F1-BDFE-39E160969467}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denggaopan.Redis", "Denggaopan.Redis\Denggaopan.Redis.csproj", "{6924414D-FBE0-48FB-A3B2-F651D2B1F769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -239,6 +241,10 @@ Global
 		{69EF6EE5-3213-43F1-BDFE-39E160969467}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69EF6EE5-3213-43F1-BDFE-39E160969467}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69EF6EE5-3213-43F1-BDFE-39E160969467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6924414D-FBE0-48FB-A3B2-F651D2B1F769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6924414D-FBE0-48FB-A3B2-F651D2B1F769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6924414D-FBE0-48FB-A3B2-F651D2B1F769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6924414D-FBE0-48FB-A3B2-F651D2B1F769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -283,6 +289,7 @@ Global
 		{658B139B-06FB-4D0A-A9B5-FC1D8ABFA315} = {E56BAFE4-F1CC-4CF5-B3C5-A50EE070AF05}
 		{71619B7A-8346-4D86-9F32-7769F8A7AA2A} = {E56BAFE4-F1CC-4CF5-B3C5-A50EE070AF05}
 		{69EF6EE5-3213-43F1-BDFE-39E160969467} = {E56BAFE4-F1CC-4CF5-B3C5-A50EE070AF05}
+		{6924414D-FBE0-48FB-A3B2-F651D2B1F769} = {E56BAFE4-F1CC-4CF5-B3C5-A50EE070AF05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EE9AA19-2931-42AD-B584-07C33F1FFB9F}

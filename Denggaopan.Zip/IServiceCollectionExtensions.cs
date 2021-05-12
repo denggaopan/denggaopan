@@ -1,16 +1,15 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Denggaopan.Npoi
+namespace Denggaopan.Zip
 {
     public static class IServiceCollectionExtensions
     {
         public static IServiceCollection AddNpoi(this IServiceCollection services)
         {
-            return services.AddSingleton<IExcelService, ExcelService>();
+            return services.AddSingleton<IZipService, ZipService>();
         }
     }
 }
