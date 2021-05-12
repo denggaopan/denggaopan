@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Denggaopan</Authors>
+    <Description>RabbitMq消息队列</Description>
+    <Copyright>Denggaopan</Copyright>
+    <PackageTags>RabbitMq 消息队列</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

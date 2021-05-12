@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Denggaopan</Authors>
+    <Description>excel表格操作</Description>
+    <PackageTags>excel 表格</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

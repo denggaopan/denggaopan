@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Denggaopan</Authors>
+    <Copyright>Denggaopan</Copyright>
+    <Description>压缩类库</Description>
+    <PackageTags>zip 压缩</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

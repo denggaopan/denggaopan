@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Denggaopan</Authors>
+    <Description>对象存储服务</Description>
+    <PackageTags>oss 对象存储服务</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

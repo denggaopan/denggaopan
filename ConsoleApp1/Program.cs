@@ -1,13 +1,34 @@
-﻿using Newtonsoft.Json;
+﻿using Denggaopan.Helpers;
+using Newtonsoft.Json;
 using System;
+using System.ComponentModel;
 using System.Linq;
 
 namespace ConsoleApp1
 {
+    enum OsType
+    {
+        [Description("微软Windows")]
+        Windows,
+
+        [Description("苹果iOS")]
+        Ios,
+
+        [Description("谷歌安卓")]
+        Android
+    }
     class Program
     {
         static void Main(string[] args)
         {
+
+            var list = EnumHelper.GetList<OsType>();
+            Console.WriteLine(JsonConvert.SerializeObject(list));
+
+            var desc = OsType.Ios.GetDescription();
+            Console.WriteLine(desc);
+            Console.ReadLine();
+            return;
 
             var a = Convert.ToString(100, 2);
             Console.WriteLine(a);

@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Denggaopan</Authors>
+    <Description>qrcode二维码工具</Description>
+    <PackageTags>qrcode 二维码</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
