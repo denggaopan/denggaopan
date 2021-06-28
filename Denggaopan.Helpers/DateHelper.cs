@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Denggaopan.Helpers
 {
-    public static class DateHelper
+    public static partial class DateHelper
     {
         public static List<int> GetHours(DateTime? date)
         {
