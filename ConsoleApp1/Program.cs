@@ -6,27 +6,55 @@ using System.Linq;
 
 namespace ConsoleApp1
 {
+    [Flags]
     enum OsType
     {
         [Description("微软Windows")]
-        Windows,
+        Windows = 1 << 0,
 
         [Description("苹果iOS")]
-        Ios,
+        Ios = 1 << 1,
 
         [Description("谷歌安卓")]
-        Android
+        Android = 1 << 2,
+
+        [Description("华为鸿蒙")]
+        HarmonyOS = 1 << 3,
     }
     class Program
     {
         static void Main(string[] args)
         {
+            //dateTimeHelperTest();
+            //Console.ReadLine();
+            //return;
 
+
+
+            Console.WriteLine("==================enum=================");
             var list = EnumHelper.GetList<OsType>();
             Console.WriteLine(JsonConvert.SerializeObject(list));
 
-            var desc = OsType.Ios.GetDescription();
+            var desc = OsType.HarmonyOS.GetDescription();
             Console.WriteLine(desc);
+
+            var oss = OsType.Ios | OsType.HarmonyOS;
+            Console.WriteLine(oss.ToString());
+
+
+            var oss2 = (OsType)15;
+            var oss2s = oss2.ToString();
+            Console.WriteLine(oss2s);
+            Console.WriteLine($"oss2包涵鸿蒙吗？{oss2.HasFlag(OsType.HarmonyOS)}。");
+            var ostype = Enum.Parse(typeof(OsType), oss2s);
+            Console.WriteLine($"ostype:{ostype} => {(int)ostype}");
+            var ostype2 = Enum.Parse<OsType>(oss2s, ignoreCase: true);
+            Console.WriteLine($"ostype2:{ostype2} => {(int)ostype2}");
+
+
+            Console.WriteLine($"7&8:{Convert.ToString(7,2)}&{Convert.ToString(8, 2)} ==>{7 & (int)OsType.HarmonyOS}, { (7 & (int)OsType.HarmonyOS) == (int)OsType.HarmonyOS}");
+            Console.WriteLine($"15&8:{Convert.ToString(15, 2)}&{Convert.ToString(8, 2)} ==>{15 & (int)OsType.HarmonyOS}, { (15 & (int)OsType.HarmonyOS) == (int)OsType.HarmonyOS}");
+
             Console.ReadLine();
             return;
 
@@ -104,6 +132,82 @@ namespace ConsoleApp1
 
 
             Console.Read();
+        }
+
+        private static void dateTimeHelperTest()
+        {
+            var date = new DateTime(2021, 6, 6, 0, 0, 0, DateTimeKind.Local);
+            var dates1 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.Today);
+            Console.WriteLine($"today: {JsonConvert.SerializeObject(dates1)}");
+
+            var dates2 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.Today, date);
+            Console.WriteLine($"today: {JsonConvert.SerializeObject(dates2)}");
+
+
+
+            var dates3 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.Yesterday);
+            Console.WriteLine($"Yesterday: {JsonConvert.SerializeObject(dates3)}");
+
+            var dates4 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.Yesterday, date);
+            Console.WriteLine($"Yesterday: {JsonConvert.SerializeObject(dates4)}");
+
+
+
+            var dates5 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.ThisWeek);
+            Console.WriteLine($"ThisWeek: {JsonConvert.SerializeObject(dates5)}");
+
+            var dates6 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.ThisWeek, date);
+            Console.WriteLine($"ThisWeek: {JsonConvert.SerializeObject(dates6)}");
+
+
+
+            var dates7 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.LastWeek);
+            Console.WriteLine($"LastWeek: {JsonConvert.SerializeObject(dates7)}");
+
+            var dates8 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.LastWeek, date);
+            Console.WriteLine($"LastWeek: {JsonConvert.SerializeObject(dates8)}");
+
+
+
+            var dates9 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.In7Days);
+            Console.WriteLine($"In7Days: {JsonConvert.SerializeObject(dates9)}");
+
+            var dates10 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.In7Days, date);
+            Console.WriteLine($"In7Days: {JsonConvert.SerializeObject(dates10)}");
+
+
+
+            var dates11 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.ThisMonth);
+            Console.WriteLine($"ThisMonth: {JsonConvert.SerializeObject(dates11)}");
+
+            var dates12 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.ThisMonth, date);
+            Console.WriteLine($"ThisMonth: {JsonConvert.SerializeObject(dates12)}");
+
+
+
+            var dates13 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.LastMonth);
+            Console.WriteLine($"LastMonth: {JsonConvert.SerializeObject(dates13)}");
+
+            var dates14 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.LastMonth, date);
+            Console.WriteLine($"LastMonth: {JsonConvert.SerializeObject(dates14)}");
+
+
+
+            var dates15 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.ThisYear);
+            Console.WriteLine($"ThisYear: {JsonConvert.SerializeObject(dates15)}");
+
+            var dates16 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.ThisYear, date);
+            Console.WriteLine($"ThisYear: {JsonConvert.SerializeObject(dates16)}");
+
+
+
+            var dates17 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.LastYear);
+            Console.WriteLine($"LastYear: {JsonConvert.SerializeObject(dates17)}");
+
+            var dates18 = DateTimeHelper.GetDateTimeRange(DateTimeRangeType.LastYear, date);
+            Console.WriteLine($"LastYear: {JsonConvert.SerializeObject(dates18)}");
+
+            Console.WriteLine("------------------------------");
         }
     }
 }

@@ -5,10 +5,11 @@
     <Authors>Denggaopan</Authors>
     <Description>excel表格操作</Description>
     <PackageTags>excel 表格</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Denggaopan.Helpers" Version="1.0.2" />
+    <PackageReference Include="Denggaopan.Helpers" Version="1.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.8" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
     <PackageReference Include="NPOI" Version="2.5.1" />
